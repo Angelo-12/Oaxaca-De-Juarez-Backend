@@ -8631,6 +8631,7 @@ body,
 }
 
 .main-sidebar {
+  background-color:rgb(136, 15, 68) !important;
   position: fixed;
   top: 0;
   left: 0;

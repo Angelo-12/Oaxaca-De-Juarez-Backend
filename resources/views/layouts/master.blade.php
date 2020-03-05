@@ -153,7 +153,11 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">
+            
+            {{Auth::user()->name}}
+
+          </a>
         </div>
       </div>
 
@@ -162,6 +166,44 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
+               <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-clipboard-list"></i>
+                  <p>
+                    Inicio
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Perfil
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    Usuarios
+                  </p>
+                </a>
+              </li>
+          
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    Zonas de Comercializacion
+                  </p>
+                </a>
+              </li>
+                  
+
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
               <i class="fas fa-clipboard-list"></i>
@@ -185,15 +227,16 @@
               </li>
             </ul>
           </li>
+
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-power-off"></i>
               <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
+                Cerrar Sesion
               </p>
             </a>
           </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
