@@ -8631,7 +8631,6 @@ body,
 }
 
 .main-sidebar {
-  background-color: rgb(121, 20, 54) !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -13102,6 +13101,38 @@ a.text-muted:hover {
 .elevation-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }@charset "UTF-8";
+
+.blue {
+  color: #3490dc;
+}
+
+.red {
+  color: #e3342f;
+}
+
+.green {
+  color: #38c172;
+}
+
+.yellow {
+  color: #ffed4a;
+}
+
+.cyan {
+  color: #6cb2eb;
+}
+
+.orange {
+  color: #f6993f;
+}
+
+.black {
+  color: black;
+}
+
+.teal {
+  color: #4dc0b5;
+}
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

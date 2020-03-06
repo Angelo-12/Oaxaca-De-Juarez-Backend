@@ -171,7 +171,7 @@
 
                <li class="nav-item">
                 <router-link to="/inicio" class="nav-link">
-                  <i class="nav-icon fas fa-clipboard-list"></i>
+                  <i class="nav-icon fas fa-clipboard-list blue"></i>
                   <p>
                     Inicio
                   </p>
@@ -188,26 +188,26 @@
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
+                <router-link to="/usuarios" class="nav-link">
+                  <i class="nav-icon fas fa-users black"></i>
                   <p>
                     Usuarios
                   </p>
-                </a>
+                </>
               </li>
           
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-thumbtack"></i>
+                <router-link to="/zonas" class="nav-link">
+                  <i class="nav-icon fas fa-thumbtack green"></i>
                   <p>
                     Zonas de Comercializacion
                   </p>
-                </a>
+                </rou>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-sitemap"></i>
+                <router-link to="/organizaciones" class="nav-link">
+                  <i class="nav-icon fas fa-sitemap teal"></i>
                   <p>
                     Organizaciones
                   </p>
@@ -215,9 +215,9 @@
               </li>    
                   
 
-          <li class="nav-item has-treeview menu-open">
+          <li class="nav-item has-treeview menu-close">
             <a href="#" class="nav-link">
-              <i class="fas fa-clipboard-list"></i>
+              <i class="nav-icon fas fa-clipboard-list"></i>
               <p>
                 Starter Pages
                 <i class="right fas fa-angle-left"></i>
@@ -240,12 +240,17 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-power-off"></i>
-              <p>
-                Cerrar Sesion
-              </p>
+            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+               <i class="nav-icon fas fa-power-off red" ></i>
+               <p>
+                {{ __('Cerrar Sesion') }}
+               </p>
+              
             </a>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                     @csrf
+                 </form>
           </li>
           
         </ul>
