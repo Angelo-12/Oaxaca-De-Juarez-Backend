@@ -8631,7 +8631,7 @@ body,
 }
 
 .main-sidebar {
-  background-color:rgb(136, 15, 68) !important;
+  background-color: rgb(121, 20, 54) !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -29908,5 +29908,10 @@ readers do not read off random characters that represent icons */
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.router-link-exact-active {
+  background-color: #4d0505;
+  color: #fff !important;
 }
 
