@@ -1,31 +1,26 @@
 <template>
     <div class="container">
-        <div class="row">
-          <div class="col-12">
+        <div class="row mt-5">
+          <div class="col-md-12">
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Usuarios</h3>
 
                 <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                    </div>
-                  </div>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#agregarEmpleado">Agregar <i class="fas fa-user-plus"></i></button>
                 </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
+                <table class="table table-hover">
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>User</th>
-                      <th>Date</th>
-                      <th>Status</th>
-                      <th>Reason</th>
+                      <th>Nombre</th>
+                      <th>Apellido Paterno</th>
+                      <th>Apellido Materno</th>
+                      <th>Edad</th>
+                      <th>Tipo Usuario</th>
                     </tr>
                   </thead>
                   
@@ -36,6 +31,28 @@
             <!-- /.card -->
           </div>
         </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="agregarEmpleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Agregar Emeplado">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 </template>
 
