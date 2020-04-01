@@ -152,7 +152,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <!--<img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">-->
         </div>
         <div class="info">
           <a href="" class="d-block">
@@ -188,12 +188,12 @@
               </li>
 
               <li class="nav-item">
-                <router-link to="/usuarios" class="nav-link">
+                <a href="{{url('usuarios')}}" class="nav-link">
                   <i class="nav-icon fas fa-users black"></i>
                   <p>
                     Usuarios
                   </p>
-                </>
+                </a>
               </li>
           
               <li class="nav-item">
@@ -276,10 +276,9 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <div class="content">
+    <div class="content" >
       <div class="container-fluid">
-        <router-view></router-view>
-        <!-- /.row -->
+        @yield('content')
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
@@ -296,21 +295,8 @@
   </aside>
   <!-- /.control-sidebar -->
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2020-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> Todos los derechos reservados
-  </footer>
 </div>
-<!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
-
-<!-- jQuery -->
 <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

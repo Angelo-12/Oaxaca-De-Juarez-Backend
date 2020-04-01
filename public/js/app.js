@@ -38892,10 +38892,10 @@ var render = function() {
               _c(
                 "form",
                 {
+                  attrs: { action: "./api/crearUsuario", method: "POST" },
                   on: {
                     submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.crearUsuario($event)
+                      return _vm.crearUsuario()
                     }
                   }
                 },

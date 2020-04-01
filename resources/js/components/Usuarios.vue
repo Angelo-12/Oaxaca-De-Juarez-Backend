@@ -43,7 +43,7 @@
         </button>
       </div>
 
-      <form @submit.prevent="crearUsuario">
+      <form action="./api/crearUsuario" method="POST" @submit="crearUsuario()">
       <div class="modal-body">
         <div class="form-group">
           <label>Nombre</label>
